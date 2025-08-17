@@ -3,7 +3,7 @@
 name: "Ansible Playbook Run"
 
 env:
-  FAIL_ON: "medium"
+  FAIL_ON: "high"
   RESULTS_DIR: "results-dir"
 
 on:
