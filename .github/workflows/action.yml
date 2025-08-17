@@ -22,8 +22,7 @@ jobs:
     steps:
       - name: "Checkout the code"
         uses: "actions/checkout@v4"
-        with:
-          token: "${{ secrets.GH_PAT }}"
+
 
       - name: "Create the folder for storing the scan results"
         run: mkdir -p ${{env.RESULTS_DIR}}
@@ -68,8 +67,6 @@ jobs:
           
       - name: "Checkout the code"
         uses: "actions/checkout@v4"
-        with:
-          token: "${{ secrets.GH_PAT }}"
 
       - name: "Login to Azure using a service principal"
         uses: "Azure/login@v2"
