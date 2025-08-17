@@ -61,6 +61,7 @@
     name: "{{ nsg_name }}"
     rules: "{{ nsg_rules }}"
     tags: "{{ common_tags }}"
+    security_group: "{{ nsg_output.state.name }}"
   register: "nsg_output"
 
 - name: "Debug - Network Security Group result"
